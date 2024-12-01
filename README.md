@@ -7,15 +7,10 @@
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/PedroMiranda243/LibraryApi?style=for-the-badge)
 
 <img src="imagem.png" alt="gatojoinha">
-> [!NOTE]
-> Este repositório contém o proejto LibraryApi, projeto referente a segunda avaliação da cadeira de Back-End Frameworks.
-> LibraryApi é uma Api RestFull que é responsável por gerenciar livros em uma
-biblioteca, permitindo o controle de usuários (leitores), livros
-e empréstimos.
 
 > [!NOTE]
 > Este repositório contém o proejto LibraryApi, projeto referente a segunda avaliação da cadeira de Back-End Frameworks.
-> <br>
+> <p>
 > LibraryApi é uma Api RestFull que é responsável por gerenciar livros em uma biblioteca, permitindo o controle de usuários (leitores), livros e empréstimos.
 
 
