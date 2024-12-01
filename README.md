@@ -21,15 +21,9 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 - Você instalou a versão mais recente de `<Sequelize / Express / MySql/ NodeMon/ Node>`
 - Você tem uma máquina `<Windows>`, compatível com as tecnologias citadas.
 
-## 🚀 Instalando <nome_do_projeto>
+## 🚀 Instalando LibraryApi
 
-Para instalar o <nome_do_projeto>, siga estas etapas:
-
-Linux e macOS:
-
-```
-<comando_de_instalação>
-```
+Para instalar o LibraryApi, siga estas etapas:
 
 Windows:
 
