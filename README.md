@@ -13,6 +13,9 @@
 biblioteca, permitindo o controle de usuários (leitores), livros
 e empréstimos.
 
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+ 
 ## 💻 Pré-requisitos
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
