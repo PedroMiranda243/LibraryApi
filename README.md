@@ -18,9 +18,8 @@
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
-- Você instalou a versão mais recente de `<linguagem / dependência / requeridos>`
-- Você tem uma máquina `<Windows / Linux / Mac>`. Indique qual sistema operacional é compatível / não compatível.
-- Você leu `<guia / link / documentação_relacionada_ao_projeto>`.
+- Você instalou a versão mais recente de `<Sequelize / Express / MySql/ NodeMon/ Node>`
+- Você tem uma máquina `<Windows / Linux / Mac>`,compatível com as tecnologias citadas/ não compatível.
 
 ## 🚀 Instalando <nome_do_projeto>
 
