@@ -19,7 +19,7 @@
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 - Você instalou a versão mais recente de `<Sequelize / Express / MySql/ NodeMon/ Node>`
-- Você tem uma máquina `<Windows / Linux / Mac>`,compatível com as tecnologias citadas/ não compatível.
+- Você tem uma máquina `<Windows / Linux / Mac>`, compatível com as tecnologias citadas/ não compatível.
 
 ## 🚀 Instalando <nome_do_projeto>
 
