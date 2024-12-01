@@ -8,7 +8,6 @@
 
 <img src="imagem.png" alt="gatojoinha">
 > [!NOTE]
-
 > Este repositório contém o proejto LibraryApi, projeto referente a segunda avaliação da cadeira de Back-End Frameworks.
 >LibraryApi é uma Api RestFull que é responsável por gerenciar livros em uma
 biblioteca, permitindo o controle de usuários (leitores), livros
