@@ -86,8 +86,8 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/mihaeldatoman" title="Perfil do GitHub">
-        <img src="https://avatars.githubusercontent.com/u/140518477?v=4" width="100px;" alt="pfp maycom"/><br>
+      <a href="https://github.com/RAM2252" title="Perfil do GitHub">
+        <img src="https://avatars.githubusercontent.com/u/138143680?v=4" width="100px;" alt="pfp rafa"/><br>
         <sub>
           <b>Steve Jobs</b>
         </sub>
