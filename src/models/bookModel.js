@@ -1,27 +1,30 @@
-import { Sequelize } from 'sequelize';
-import db from '../connection.js';
+import { Sequelize } from "sequelize";
+import db from "../connection.js";
 
-export default db.define('books', {
-    idBook: {
-        type: Sequelize.INTEGER.UNSIGNED,
-        primaryKey: true,
-        autoIncrement: true,
-        allowNull: false
-    },
-    Title: {
-        type: Sequelize.STRING,
-        allowNull: false
-    },
-    Author: {
-        type: Sequelize.STRING,
-        allowNull: false
-    },
+// Modelo de Livros
+const Book = db.define("Book", {
+  id: {
+    type: Sequelize.INTEGER.UNSIGNED,
+    primaryKey: true,
+    autoIncrement: true,
+    allowNull: false,
+  },
+  title: {
+    type: Sequelize.STRING,
+    allowNull: false,
+  },
+  author: {
+    type: Sequelize.STRING,
+    allowNull: false,
+  },
+  genre: {
+    type: Sequelize.STRING,
+    allowNull: true,
+  },
+  publicationYear: {
+    type: Sequelize.INTEGER,
+    allowNull: true,
+  },
+});
 
-    pubDate:{
-        type:sequilize.STRING,
-        allowNull:false
-    }
-
-
-
-})
+export default { Book };
