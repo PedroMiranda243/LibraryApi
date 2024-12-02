@@ -54,24 +54,40 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
 <table>
   <tr>
     <td align="center">
-      <a href="#" title="defina o título do link">
-        <img src="https://avatars.githubusercontent.com/u/143668626?v=4" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
+      <a href="https://github.com/camimcl" title="Perfil do GitHub">
+        <img src="https://avatars.githubusercontent.com/u/143668626?v=4" width="100px;" alt="pfp camile"/><br>
         <sub>
           <b>Camile Marcele</b>
         </sub>
       </a>
     </td>
     <td align="center">
-      <a href="#" title="defina o título do link">
-        <img src="https://avatars.githubusercontent.com/u/142632758?v=4" width="100px;" alt="Foto do Mark Zuckerberg"/><br>
+      <a href="https://github.com/PedroMiranda243" title="Perfil do GitHub">
+        <img src="https://avatars.githubusercontent.com/u/142632758?v=4" width="100px;" alt="pfp pedro"/><br>
         <sub>
           <b>Pedro Miranda</b>
         </sub>
       </a>
     </td>
     <td align="center">
-      <a href="#" title="defina o título do link">
-        <img src="https://miro.medium.com/max/360/0*1SkS3mSorArvY9kS.jpg" width="100px;" alt="Foto do Steve Jobs"/><br>
+      <a href="https://github.com/RicardoAlmeida06" title="Perfil do GitHub">
+        <img src="https://avatars.githubusercontent.com/u/142633316?v=4" width="100px;" alt="pfp rick"/><br>
+        <sub>
+          <b>Steve Jobs</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/mihaeldatoman" title="Perfil do GitHub">
+        <img src="https://avatars.githubusercontent.com/u/140518477?v=4" width="100px;" alt="pfp maycom"/><br>
+        <sub>
+          <b>Steve Jobs</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/mihaeldatoman" title="Perfil do GitHub">
+        <img src="https://avatars.githubusercontent.com/u/140518477?v=4" width="100px;" alt="pfp maycom"/><br>
         <sub>
           <b>Steve Jobs</b>
         </sub>
