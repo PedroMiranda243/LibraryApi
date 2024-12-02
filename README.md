@@ -98,4 +98,4 @@ Elenco responsável pela elaboração deste projeto:
 
 ## 📝 Licença
 
-Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
+Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.txt) para mais detalhes.
