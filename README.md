@@ -47,9 +47,9 @@ Para contribuir com LibraryApi, siga estas etapas:
 
 Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
-## 🤝 Colaboradores
+## 🤝 Equipe do projeto
 
-Agradecemos às seguintes pessoas que contribuíram para este projeto:
+Elenco responsável pela elaboração deste projeto:
 
 <table>
   <tr>
