@@ -55,9 +55,9 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
   <tr>
     <td align="center">
       <a href="#" title="defina o título do link">
-        <img src="https://avatars3.githubusercontent.com/u/31936044" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
+        <img src="https://avatars.githubusercontent.com/u/143668626?v=4" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
         <sub>
-          <b>Iuri Silva</b>
+          <b>Camile Marcele</b>
         </sub>
       </a>
     </td>
