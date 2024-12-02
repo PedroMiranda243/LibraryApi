@@ -3,7 +3,7 @@ import db from "../connection.js";
 
 // Modelo de Livros
 const Book = db.define("Book", {
-  id: {
+  idBook: {
     type: Sequelize.INTEGER.UNSIGNED,
     primaryKey: true,
     autoIncrement: true,
@@ -27,4 +27,4 @@ const Book = db.define("Book", {
   },
 });
 
-export default { Book };
+export default Book ;

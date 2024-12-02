@@ -1,5 +1,5 @@
 // Importa os modelos de Livro, Usuário e Empréstimo
-import { client } from "../models/clientsModel.js";
+import client from "../models/clientsModel.js";
 
 
 // -------------------- Usuários --------------------

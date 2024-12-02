@@ -3,7 +3,7 @@ import db from "../connection.js";
 
 // Modelo de Empréstimos
 const Loan = db.define("Loan", {
-  id: {
+  idLoan: {
     type: Sequelize.INTEGER.UNSIGNED,
     primaryKey: true,
     autoIncrement: true,
@@ -23,8 +23,8 @@ const Loan = db.define("Loan", {
   },
   returnDate: {
     type: Sequelize.DATE,
-    allowNull: true,
+    allowNull: false,
   },
 });
 
-export default { Loan };
+export default  Loan ;

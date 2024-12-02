@@ -3,7 +3,7 @@ import db from "../connection.js";
 
 // Modelo de Usuários
 const client = db.define("client", {
-  id: {
+  idClient: {
     type: Sequelize.INTEGER.UNSIGNED,
     primaryKey: true,
     autoIncrement: true,
@@ -15,7 +15,7 @@ const client = db.define("client", {
   },
   address: {
     type: Sequelize.STRING,
-    allowNull: true,
+    allowNull: false,
   },
   email: {
     type: Sequelize.STRING,
@@ -28,4 +28,4 @@ const client = db.define("client", {
   },
 });
 
-export default { client };
+export default client;
