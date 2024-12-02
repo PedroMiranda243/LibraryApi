@@ -73,7 +73,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
       <a href="https://github.com/RicardoAlmeida06" title="Perfil do GitHub">
         <img src="https://avatars.githubusercontent.com/u/142633316?v=4" width="100px;" alt="pfp rick"/><br>
         <sub>
-          <b>Steve Jobs</b>
+          <b>Ricardo Cézar</b>
         </sub>
       </a>
     </td>
@@ -81,7 +81,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
       <a href="https://github.com/mihaeldatoman" title="Perfil do GitHub">
         <img src="https://avatars.githubusercontent.com/u/140518477?v=4" width="100px;" alt="pfp maycom"/><br>
         <sub>
-          <b>Steve Jobs</b>
+          <b>Marcio Maycom</b>
         </sub>
       </a>
     </td>
@@ -89,7 +89,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
       <a href="https://github.com/RAM2252" title="Perfil do GitHub">
         <img src="https://avatars.githubusercontent.com/u/138143680?v=4" width="100px;" alt="pfp rafa"/><br>
         <sub>
-          <b>Steve Jobs</b>
+          <b>Rafael Antônio</b>
         </sub>
       </a>
     </td>
