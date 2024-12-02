@@ -27,23 +27,15 @@ Para baixar o repositório do LibraryApi, siga estas etapas:
 
 Windows:
 
-```
-<comando_de_instalação>
-```
-
-## ☕ Usando <nome_do_projeto>
-
-Para usar <nome_do_projeto>, siga estas etapas:
+Abra a pasta desejada para o download do repositório e abra o git bash na mesma.
 
 ```
-<exemplo_de_uso>
+git clone https://github.com/PedroMiranda243/LibraryApi
 ```
 
-Adicione comandos de execução e exemplos que você acha que os usuários acharão úteis. Forneça uma referência de opções para pontos de bônus!
+## 📫 Contribuindo para LibraryApi
 
-## 📫 Contribuindo para <nome_do_projeto>
-
-Para contribuir com <nome_do_projeto>, siga estas etapas:
+Para contribuir com LibraryApi, siga estas etapas:
 
 1. Bifurque este repositório.
 2. Crie um branch: `git checkout -b <nome_branch>`.
