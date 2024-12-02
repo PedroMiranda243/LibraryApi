@@ -29,6 +29,8 @@ Windows:
 
 Abra a pasta desejada para o download do repositório e abra o git bash na mesma.
 
+Execute o seguite código no terminal:
+
 ```
 git clone https://github.com/PedroMiranda243/LibraryApi
 ```
