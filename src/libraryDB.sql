@@ -1,0 +1,34 @@
+-- Tabela `book`
+DROP TABLE IF EXISTS `book`;
+CREATE TABLE `book` (
+  `idBook` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `title` VARCHAR(50) NOT NULL,
+  `author` VARCHAR(50) NOT NULL,
+  `publicationYear` INT NOT NULL,
+  `genre` VARCHAR(20) NOT NULL,
+  PRIMARY KEY (`idBook`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Tabela `client`
+DROP TABLE IF EXISTS `client`;
+CREATE TABLE `client` (
+  `idClient` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(50) NOT NULL,
+  `address` VARCHAR(50) NOT NULL,
+  `email` VARCHAR(50) NOT NULL UNIQUE,
+  `phone` VARCHAR(50),
+  PRIMARY KEY (`idClient`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Tabela `loan`
+DROP TABLE IF EXISTS `loan`;
+CREATE TABLE `loan` (
+  `idLoan` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `idClient` BIGINT UNSIGNED NOT NULL,
+  `idBook` BIGINT UNSIGNED NOT NULL,
+  `loanDate` DATE NOT NULL,
+  `returnDate` DATE NOT NULL,
+  PRIMARY KEY (`idLoan`),
+  CONSTRAINT `fk_loan_client` FOREIGN KEY (`idClient`) REFERENCES `client`(`idClient`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `fk_loan_book` FOREIGN KEY (`idBook`) REFERENCES `book`(`idBook`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
