@@ -1,3 +1,4 @@
+// Importa os modelos dos Livros
 import Book from "../models/bookModel.js";
 
 // -------------------- Livros --------------------
@@ -46,7 +47,7 @@ function updateBook(req, res) {
       publicationYear: req.body.publicationYear,
     },
     {
-      where: { id: req.params.id },
+      where: { idBook: req.params.id },
     }
   )
     .then(() => Book.findByPk(req.params.id)) // Retorna o livro atualizado
@@ -63,7 +64,7 @@ function updateBook(req, res) {
 
 function deleteBook(req, res) {
   Book.destroy({
-    where: { id: req.params.id },
+    where: { idBook: req.params.id },
   })
     .then((result) => {
       if (result === 0) {

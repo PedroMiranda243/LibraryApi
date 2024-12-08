@@ -1,5 +1,7 @@
 import { Sequelize } from "sequelize";
 import db from "../connection.js";
+import Client from "./clientsModel.js";
+import Book from "./bookModel.js"; 
 
 // Modelo de Empréstimos
 const Loan = db.define("Loan", {
@@ -9,11 +11,11 @@ const Loan = db.define("Loan", {
     autoIncrement: true,
     allowNull: false,
   },
-  userId: {
+  idClient: {
     type: Sequelize.INTEGER.UNSIGNED,
     allowNull: false,
   },
-  bookId: {
+  idBook: {
     type: Sequelize.INTEGER.UNSIGNED,
     allowNull: false,
   },
@@ -25,6 +27,12 @@ const Loan = db.define("Loan", {
     type: Sequelize.DATE,
     allowNull: false,
   },
+}, {
+  tableName: "loan", 
+  timestamps: false,
 });
+
+Loan.belongsTo(Client, { foreignKey: "idClient" });
+Loan.belongsTo(Book, { foreignKey: "idBook" });
 
 export default  Loan ;

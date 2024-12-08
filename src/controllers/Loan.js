@@ -1,25 +1,25 @@
 import Loan from "../models/LoanModel.js";
-import Book from "../models/bookModel.js";  // Corrigido importação do modelo Book
-import Client from "../models/clientsModel.js";  // Corrigido importação do modelo Client
+import Book from "../models/bookModel.js";
+import Client from "../models/clientsModel.js";
 
 // -------------------- Empréstimos --------------------
 
 function addLoan(req, res) {
-  const { userId, bookId, loanDate, returnDate } = req.body;
+  const { idClient, idBook, loanDate, returnDate } = req.body;
 
-  Client.findByPk(userId)  // Verificando se o cliente existe
+  Client.findByPk(idClient)  // Verificando se o cliente existe
     .then((client) => {
       if (!client) {
         return res.status(404).json({ message: "Cliente não encontrado" });
       }
-      return Book.findByPk(bookId);  // Verificando se o livro existe
+      return Book.findByPk(idBook);  // Verificando se o livro existe
     })
     .then((book) => {
       if (!book) {
         return res.status(404).json({ message: "Livro não encontrado" });
       }
       // Criando o empréstimo
-      return Loan.create({ userId, bookId, loanDate, returnDate });
+      return Loan.create({ idClient, idBook, loanDate, returnDate });
     })
     .then((result) => res.json(result))  // Retorna o empréstimo criado
     .catch((error) =>
@@ -50,23 +50,31 @@ function getLoanById(req, res) {
 }
 
 function updateLoan(req, res) {
-  const { userId, bookId, loanDate, returnDate } = req.body;
+  const { idClient, idBook, loanDate, returnDate } = req.body;
 
-  Client.findByPk(userId)  // Verificando se o cliente existe
-    .then((client) => {
-      if (!client) {
+  let clientPromise = Promise.resolve(null);
+  let bookPromise = Promise.resolve(null);
+
+  if (idClient) {
+    clientPromise = Client.findByPk(idClient);  // Verificando se o cliente existe
+  }
+  if (idBook) {
+    bookPromise = Book.findByPk(idBook);  // Verificando se o livro existe
+  }
+
+  Promise.all([clientPromise, bookPromise])
+    .then(([client, book]) => {
+      if (idClient && !client) {
         return res.status(404).json({ message: "Cliente não encontrado" });
       }
-      return Book.findByPk(bookId);  // Verificando se o livro existe
-    })
-    .then((book) => {
-      if (!book) {
+      if (idBook && !book) {
         return res.status(404).json({ message: "Livro não encontrado" });
       }
+
       // Atualizando o empréstimo
       return Loan.update(
-        { userId, bookId, loanDate, returnDate },
-        { where: { id: req.params.id } }
+        { idClient, idBook, loanDate, returnDate },
+        { where: { idLoan: req.params.id } }
       );
     })
     .then(() => Loan.findByPk(req.params.id))  // Buscando o empréstimo atualizado
@@ -82,7 +90,7 @@ function updateLoan(req, res) {
 }
 
 function deleteLoan(req, res) {
-  Loan.destroy({ where: { id: req.params.id } })  // Deletando o empréstimo pelo id
+  Loan.destroy({ where: { idLoan: req.params.id } }) 
     .then((result) => {
       if (result === 0) {
         return res.status(404).json({ message: "Empréstimo não encontrado" });

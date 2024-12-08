@@ -1,15 +1,15 @@
 import express from "express";
 import clients from "./src/controllers/clients.js";
-import book from "./src/controllers/book.js";
+import book from "./src/controllers/Book.js";
 import Loan from "./src/controllers/Loan.js";
 
 const routes = express.Router();
 
-routes.get("/clients", clients.getAllUsers);
-routes.get("/clients/:id", clients.getUserById); 
-routes.put("/clients/:id", clients.updateUser); 
-routes.delete("/clients/:id", clients.deleteUser); 
-routes.post("/clients", clients.addUser); 
+routes.get("/client", clients.getAllUsers);
+routes.get("/client/:id", clients.getUserById); 
+routes.put("/client/:id", clients.updateUser); 
+routes.delete("/client/:id", clients.deleteUser); 
+routes.post("/client", clients.addUser); 
 
 
 routes.get("/book", book.getAllBooks);

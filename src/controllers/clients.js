@@ -1,4 +1,4 @@
-// Importa os modelos de Livro, Usuário e Empréstimo
+// Importa os modelos de Usuário
 import client from "../models/clientsModel.js";
 
 
@@ -46,7 +46,7 @@ function updateUser(req, res) {
         phone: req.body.phone,
       },
       {
-        where: { id: req.params.id },
+        where: { idClient: req.params.id },
       })
     .then(() => client.findByPk(req.params.id)) // Retorna o Cliente atualizado
     .then((result) => {
@@ -55,6 +55,7 @@ function updateUser(req, res) {
       }
       res.json(result); // Retorna o Cliente atualizado
     })
+
     .catch((error) =>
       res.status(500).json({ message: "Erro ao atualizar Cliente", error })
     );
@@ -62,7 +63,7 @@ function updateUser(req, res) {
 
 function deleteUser(req, res) {
   client.destroy({
-      where: { id: req.params.id },
+      where: { idClient: req.params.id},
     })
     .then((result) => {
       if (result === 0) {

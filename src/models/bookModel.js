@@ -25,6 +25,9 @@ const Book = db.define("Book", {
     type: Sequelize.INTEGER,
     allowNull: true,
   },
+  }, {
+  tableName: "book", 
+  timestamps: false, 
 });
 
 export default Book ;
