@@ -1,6 +1,6 @@
 # LibraryApi
 
-![GitHub repo size](https://img.shields.io/github/repo-size/PedroMiranda243/LibraryApi?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/PedroMiranda243/LibraryApi/tree/main?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/PedroMiranda243/LibraryApi?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/PedroMiranda243/LibraryApi?style=for-the-badge)
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/PedroMiranda243/LibraryApi?style=for-the-badge)
