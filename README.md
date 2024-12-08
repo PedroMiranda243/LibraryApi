@@ -4,7 +4,6 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/PedroMiranda243/LibraryApi?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/PedroMiranda243/LibraryApi?style=for-the-badge)
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/PedroMiranda243/LibraryApi?style=for-the-badge)
-![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/PedroMiranda243/LibraryApi?style=for-the-badge)
 
 <img src="imagem.png" alt="gatojoinha">
 
