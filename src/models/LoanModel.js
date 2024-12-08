@@ -1,9 +1,6 @@
-import { Sequelize } from "sequelize";
 import db from "../connection.js";
-import Client from "./clientsModel.js";
-import Book from "./bookModel.js"; 
+import { Sequelize } from "sequelize";
 
-// Modelo de Empréstimos
 const Loan = db.define("Loan", {
   idLoan: {
     type: Sequelize.INTEGER.UNSIGNED,
@@ -25,14 +22,18 @@ const Loan = db.define("Loan", {
   },
   returnDate: {
     type: Sequelize.DATE,
-    allowNull: false,
+    allowNull: true,
   },
 }, {
   tableName: "loan", 
   timestamps: false,
 });
+(async () => {
+  const Client = (await import("./clientsModel.js")).default;
+  const Book = (await import("./bookModel.js")).default;
 
-Loan.belongsTo(Client, { foreignKey: "idClient" });
-Loan.belongsTo(Book, { foreignKey: "idBook" });
+  Loan.belongsTo(Client, { foreignKey: "idClient" });
+  Loan.belongsTo(Book, { foreignKey: "idBook" });
+})();
 
-export default  Loan ;
+export default Loan;

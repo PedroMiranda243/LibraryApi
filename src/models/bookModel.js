@@ -1,6 +1,7 @@
 import { Sequelize } from "sequelize";
 import db from "../connection.js";
 
+
 // Modelo de Livros
 const Book = db.define("Book", {
   idBook: {
@@ -25,9 +26,9 @@ const Book = db.define("Book", {
     type: Sequelize.INTEGER,
     allowNull: true,
   },
-  }, {
-  tableName: "book", 
-  timestamps: false, 
+}, {
+  tableName: "book",
+  timestamps: false,
 });
 
-export default Book ;
+export default Book;
