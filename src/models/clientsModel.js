@@ -30,9 +30,9 @@ const client = db.define(
     },
   },
   {
-    tableName: "client", 
-    timestamps: false, 
-    underscored: false, 
+    tableName: "client",
+    timestamps: false,
+    underscored: false,
   }
 );
 

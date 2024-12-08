@@ -21,7 +21,10 @@ routes.post("/book", book.addBook);
 routes.get("/loan/", Loan.getAllLoans);
 routes.get("/loan/:id", Loan.getLoanById);
 routes.put("/loan/:id", Loan.updateLoan);
+routes.put("/loan/return/:id", Loan.returnLoan); 
 routes.delete("/loan/:id", Loan.deleteLoan);
 routes.post("/loan", Loan.addLoan);
+routes.get("/rank/pendents", Loan.getActiveLoans);
+routes.get("/rank/loans", Loan.rankLoans);
 
 export { routes as default };

@@ -27,8 +27,8 @@ CREATE TABLE `loan` (
   `idClient` BIGINT UNSIGNED NOT NULL,
   `idBook` BIGINT UNSIGNED NOT NULL,
   `loanDate` DATE NOT NULL,
-  `returnDate` DATE NOT NULL,
+  `returnDate` DATE NULL, 
   PRIMARY KEY (`idLoan`),
   CONSTRAINT `fk_loan_client` FOREIGN KEY (`idClient`) REFERENCES `client`(`idClient`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `fk_loan_book` FOREIGN KEY (`idBook`) REFERENCES `book`(`idBook`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
