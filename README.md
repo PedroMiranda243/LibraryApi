@@ -5,7 +5,6 @@
 ![GitHub forks](https://img.shields.io/github/forks/PedroMiranda243/LibraryApi?style=for-the-badge)
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/PedroMiranda243/LibraryApi?style=for-the-badge)
 
-<img src="imagem.png" alt="gatojoinha">
 
 > [!NOTE]
 > Este repositório contém o proejto LibraryApi, projeto referente a segunda avaliação da cadeira de Back-End Frameworks.
