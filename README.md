@@ -23,8 +23,8 @@ LibraryApi é uma Api RestFull que é responsável por:
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
-- Você instalou a versão mais recente de <Sequelize / Express / MySql/ NodeMon/ Node>
-- Você tem uma máquina <Windows>, compatível com as tecnologias citadas.
+- Você instalou a versão mais recente de '<Sequelize / Express / MySql/ NodeMon/ Node>'
+- Você tem uma máquina '<Windows>', compatível com as tecnologias citadas.
 
 ## 🚀 Baixando LibraryApi
 
@@ -37,15 +37,15 @@ Abra a pasta desejada para o download do repositório e abra o git bash na mesma
 Execute o seguite código no terminal:
 
 
-git clone https://github.com/PedroMiranda243/LibraryApi
+'git clone https://github.com/PedroMiranda243/LibraryApi'
 
 Instale as dependências
-bash
-npm install
+'bash'
+'npm install'
 
-Configure o seu banco em src/config/connection.js
+Configure o seu banco em 'src/config/connection.js'
 Por exemplo:
-bash
+'bash
 import { Sequelize } from 'sequelize';
 
 const nomeDB = "libraryDB"
@@ -54,7 +54,7 @@ const db = new Sequelize(nomeDB, 'root', 'root', {
     dialect: 'mysql',
     port: 3306
   
-});
+});'
 
 export default db;
 
