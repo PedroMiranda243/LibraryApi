@@ -1,3 +1,5 @@
+# LibraryApi
+
 ![GitHub repo size](https://img.shields.io/github/repo-size/PedroMiranda243/LibraryApi?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/PedroMiranda243/LibraryApi?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/PedroMiranda243/LibraryApi?style=for-the-badge)
@@ -23,8 +25,8 @@ LibraryApi é uma Api RestFull que é responsável por:
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
-- Você instalou a versão mais recente de '<Sequelize / Express / MySql/ NodeMon/ Node>'
-- Você tem uma máquina '<Windows>', compatível com as tecnologias citadas.
+- Você instalou a versão mais recente de `<Sequelize / Express / MySql/ NodeMon/ Node>`
+- Você tem uma máquina `<Windows>`, compatível com as tecnologias citadas.
 
 ## 🚀 Baixando LibraryApi
 
@@ -36,16 +38,16 @@ Abra a pasta desejada para o download do repositório e abra o git bash na mesma
 
 Execute o seguite código no terminal:
 
-
-'git clone https://github.com/PedroMiranda243/LibraryApi'
-
+```
+git clone https://github.com/PedroMiranda243/LibraryApi
+```
 Instale as dependências
-'bash'
-'npm install'
-
-Configure o seu banco em 'src/config/connection.js'
+```bash
+npm install
+```
+Configure o seu banco em src/config/connection.js
 Por exemplo:
-'bash
+```bash
 import { Sequelize } from 'sequelize';
 
 const nomeDB = "libraryDB"
@@ -54,22 +56,22 @@ const db = new Sequelize(nomeDB, 'root', 'root', {
     dialect: 'mysql',
     port: 3306
   
-});'
+});
 
 export default db;
-
+```
 Execute o projeto
-bash
+```bash
 node server.js
-
+```
 ## 📫 Contribuindo para LibraryApi
 
 Para contribuir com LibraryApi, siga estas etapas:
 
 1. Bifurque este repositório.
-2. Crie um branch: git checkout -b <nome_branch>.
-3. Faça suas alterações e confirme-as: git commit -m '<mensagem_commit>'
-4. Envie para o branch original: git push origin LibraryApi / main
+2. Crie um branch: `git checkout -b <nome_branch>`.
+3. Faça suas alterações e confirme-as: `git commit -m '<mensagem_commit>'`
+4. Envie para o branch original: `git push origin LibraryApi / main`
 5. Crie a solicitação de pull.
 
 Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
@@ -125,4 +127,4 @@ Elenco responsável pela elaboração deste projeto:
 
 ## 📝 Licença
 
-Esse projeto está sob licença. Veja o arquivo [LICENÇA](https://github.com/PedroMiranda243/LibraryApi/blob/main/LICENSE) para mais detalhes.
+Esse projeto está sob licença. Veja o arquivo [LICENÇA](https://github.com/PedroMiranda243/LibraryApi/blob/main/LICENSE) para mais detalhes.
